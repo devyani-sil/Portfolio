@@ -16,7 +16,7 @@ const Work = () => {
       text: "Real Palace ",
       type: "Frontend Development",
       src: realpalace,
-      link: "#",
+      link: "http://realpalace.in/",
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const Work = () => {
       src: myportfolio,
       text: "Portfolio Site",
       type: "React Development",
-      link: "#",
+      link: "https://my-portfolio-sigma-liart.vercel.app/",
     },
   ];
 
