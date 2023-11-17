@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Scroll from "./motion/scroll";
 import { Link } from "react-scroll";
+import DownScroll from "./motion/DownScroll";
 const Home = () => {
   return (
     <section
@@ -22,7 +22,7 @@ const Home = () => {
       <div className="absoulte xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <Link to="expertise" smooth duration={500}>
           <div className="w-[34px] h-[60px] rounded-3xl border-2 border-gray-300 flex justify-center items-start p-2 hover:cursor-pointer">
-            <Scroll />
+            <DownScroll />
           </div>
         </Link>
       </div>

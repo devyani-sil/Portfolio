@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Scroll = () => {
+const DownScroll = () => {
   return (
     <motion.div
       animate={{
@@ -17,4 +17,4 @@ const Scroll = () => {
   );
 };
 
-export default Scroll;
+export default DownScroll;
