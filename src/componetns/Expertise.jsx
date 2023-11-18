@@ -16,7 +16,7 @@ const Expertise = () => {
       className="md:h-screen bg-gradient-to-t  from-[#000000de] via-black to-[#000000f9] text-white"
     >
       <div className="mr-auto ml-auto  py-5 flex flex-col  justify-center items-center ">
-        <h1 className=" text-6xl/10 mt-16 font-bold  tracking-wider">
+        <h1 className=" lg:text-7xl md:text-6xl xs:text-4xl text-5xl/10 mt-16 font-bold  tracking-wider">
           My Expertise
         </h1>
 
