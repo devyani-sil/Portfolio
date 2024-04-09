@@ -10,6 +10,7 @@ import {
 const Contact = () => {
   return (
     <section
+      id="contact"
       name="contact"
       className="pt-8 flex items-center text-white bg-[#120117]"
     >

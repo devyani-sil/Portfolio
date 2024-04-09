@@ -1,14 +1,22 @@
 import React from "react";
-import { Home, Contact, Expertise, Footer, Work } from "./componetns";
+import { Hero, Contact, Expertise, Footer, Work } from "./componetns";
+import Navbar from "./componetns/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Project from "./componetns/Project";
+import Home from "./Pages/Home";
 const App = () => {
   return (
-    <div className="">
-      <Home />
-      <Expertise />
-      <Work />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />}>
+            <Route path=":projectId" element={<Project />} />
+          </Route>
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 

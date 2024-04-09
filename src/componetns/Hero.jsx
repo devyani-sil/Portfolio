@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-scroll";
 import DownScroll from "./motion/DownScroll";
-const Home = () => {
+const Hero = () => {
   return (
     <section
-      name="home"
+      id = "hero"
+      name="hero"
       className=" text-white h-screen bg-hero-pattern  bg-cover bg-center"
     >
       <Navbar />
@@ -15,7 +16,7 @@ const Home = () => {
             Mirth Pawar
           </h1>
           <p className="text-lg md:text-2xl font-medium tracking-wider">
-            Front-end Developer
+            Web Developer
           </p>
         </div>
       </div>
@@ -30,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

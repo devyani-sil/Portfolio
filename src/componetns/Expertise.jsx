@@ -12,6 +12,7 @@ import { expertisebg } from "../assets";
 const Expertise = () => {
   return (
     <section
+      id="expertise"
       name="expertise"
       className="md:h-screen bg-gradient-to-t  from-[#000000de] via-black to-[#000000f9] text-white"
     >

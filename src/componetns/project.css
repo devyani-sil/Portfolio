@@ -1,0 +1,24 @@
+.image-visible {
+  height: 100px;
+  transition: height 0.3s ease;
+}
+
+.image-hidden {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+@keyframes moveRightLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

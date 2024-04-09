@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+
+import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,26 +22,30 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: "home",
+      tag: "home",
+      link: "hero",
     },
     {
       id: 2,
+      tag: "expertise",
       link: "expertise",
     },
     {
       id: 3,
+      tag: "work",
       link: "work",
     },
     {
       id: 4,
+      tag: "contact",
       link: "contact",
     },
   ];
   console.log(nav);
   return (
     <div>
-      <div className="w-[100%] flex items-center bg-black text-white p-6 ">
-        <h1 className="text-3xl md:text-5xl  font-bold font-signature">
+      <div className="w-[100%] flex items-center  text-white p-6 ">
+        <h1 className="text-3xl md:text-5xl  font-bold font-signature ">
           Mirth._
         </h1>
         <nav className="hidden md:flex  items-center mr-auto ml-auto ">
@@ -57,9 +62,9 @@ const Navbar = () => {
                   onMouseEnter={() => setSelected(link.id)}
                   onMouseLeave={() => setSelected(null)}
                 >
-                  <Link to={link.link} smooth duration={500}>
-                    // {link.link}
-                  </Link>
+                  <HashLink to={`/#${link.link}`} smooth duration={500}>
+                    // {link.tag}
+                  </HashLink>
                 </li>
               );
             })}
@@ -68,7 +73,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="md:hidden cursor-pointer pr-4 z-20 ml-auto"
+          className="md:hidden cursor-pointer pr-4 z-20 ml-auto "
         >
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
@@ -82,14 +87,14 @@ const Navbar = () => {
             {links.map((link) => {
               return (
                 <li key={link.id} className="cursor-pointer py-3 text-3xl">
-                  <Link
+                  <HashLink
+                    to={`/#${link.link}`}
                     onClick={() => setNav(!nav)}
-                    to={link.link}
                     smooth
                     duration={500}
                   >
-                    // {link.link}
-                  </Link>
+                    // {link.tag}
+                  </HashLink>
                 </li>
               );
             })}
@@ -113,9 +118,9 @@ const Navbar = () => {
                     onMouseEnter={() => setSelected(link.id)}
                     onMouseLeave={() => setSelected(null)}
                   >
-                    <Link to={link.link} smooth duration={500}>
-                      // {link.link}
-                    </Link>
+                    <HashLink to={`/#${link.link}`} smooth duration={500}>
+                      // {link.tag}
+                    </HashLink>
                   </li>
                 );
               })}

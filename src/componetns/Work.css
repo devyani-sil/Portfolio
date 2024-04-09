@@ -1,37 +1,39 @@
 /* YourComponent.css */
 
+
 @keyframes slide-fade-in {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes slide-fade-out {
-    from {
-      transform: translateY(10px);
-      
-    }
-    to {
-      transform: translateY(0);
-      
-    }
-  }
-  
-  .animate-slide-fade-in {
-    animation: slide-fade-in .5s ease-in-out;
+  from {
+    transform: translateY(100%);
+    opacity: 0;
   }
 
-  .animate-slide-fade-in:hover{
-    cursor: pointer;
-    color: rgba(0, 255, 255, 0.826);
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .animate-slide-fade-out {
-    animation: slide-fade-out .5s ease-in-out;
+}
+
+@keyframes slide-fade-out {
+  from {
+    transform: translateY(10px);
+
   }
-  
+
+  to {
+    transform: translateY(0);
+
+  }
+}
+
+.animate-slide-fade-in {
+  animation: slide-fade-in .5s ease-in-out;
+}
+
+.animate-slide-fade-in:hover {
+  cursor: pointer;
+  color: rgba(0, 255, 255, 0.826);
+}
+
+.animate-slide-fade-out {
+  animation: slide-fade-out .5s ease-in-out;
+}

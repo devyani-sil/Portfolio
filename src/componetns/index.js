@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Hero from "./Hero";
 import Expertise from "./Expertise";
 import Work from "./Work";
 import Footer from "./Footer";
@@ -6,5 +6,5 @@ import Contact from "./Contact";
 
 
 export {
-    Home, Expertise, Work, Footer, Contact
+    Hero, Expertise, Work, Footer, Contact
 }
