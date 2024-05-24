@@ -9,6 +9,7 @@ import {
   MdOutlineKeyboardDoubleArrowRight,
 } from "react-icons/md";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import Footer from "./Footer";
 const Project = () => {
   const { projectId } = useParams();
   const [nextProject, setNextProject] = useState(null);
@@ -85,15 +86,17 @@ const Project = () => {
             {nextProject && (
               // Render the content that depends on nextProject
               <div className="">
-                <p className="font-bold tracking-wider text-lg">{nextProject.text}</p>
+                <p className="font-bold tracking-wider text-lg">
+                  {nextProject.text}
+                </p>
                 {/* Other content */}
               </div>
             )}
           </div>
         </div>
       </div>
-      <div className="ml-auto mr-auto pt-10 px-6 md:ml-40">
-        <div>
+      <div className="ml-auto mr-auto pt-10 px-6 md:ml-40 ">
+        <div className="md:mt-0 mt-10">
           <p className=" opacity-80">Web Development</p>
           <p className="text-4xl mt-1 font-bold break-words">{project.text}</p>
         </div>
@@ -170,6 +173,7 @@ const Project = () => {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

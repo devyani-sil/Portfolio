@@ -1,13 +1,26 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+
+import { useParams } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
+  const { projectId } = useParams();
+  console.log("nav"+projectId);
+  const [navBg, setNavBg] = useState("black");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    const handleColor = () => {
+      if (projectId) {
+        setNavBg("#1A191D");
+      } else setNavBg("black");
+    };
+
+    handleColor();
+
     const handScroll = () => {
       const isScrooled = window.scrollY > 600;
       setScrolled(isScrooled);
@@ -43,11 +56,15 @@ const Navbar = () => {
   ];
   console.log(nav);
   return (
-    <div>
-      <div className="w-[100%] flex items-center  text-white p-6 ">
+    <div className="realtive">
+      <div
+        className={`w-[100%] flex  items-center  text-white px-6 py-4 md:static fixed z-50  bg-opacity-80`}
+        style={{ backgroundColor: navBg }}
+      >
         <h1 className="text-3xl md:text-5xl  font-bold font-signature ">
           Mirth._
         </h1>
+
         <nav className="hidden md:flex  items-center mr-auto ml-auto ">
           <ul className="hidden md:flex text-lg font-medium text-white">
             {links.map((link) => {
@@ -80,7 +97,7 @@ const Navbar = () => {
 
         {nav && (
           <ul
-            className="md:hidden flex flex-col justify-center 
+            className="md:hidden  flex flex-col justify-center 
         items-center absolute  top-0 left-0 w-full h-screen bg-gradient-to-b from-black  to-gray-700
         z-10"
           >
