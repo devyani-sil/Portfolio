@@ -23,7 +23,7 @@ const Work = () => {
     <section
      id="work"
       name="work"
-      className="py-10  text-white bg-gradient-to-t from-[#000000f9] via-black to-[#000000de]"
+      className="py-10 md:mt-0 text-white bg-gradient-to-t from-[#000000f9] via-black to-[#000000de]"
     >
       <div className="lg:max-w-[80%] lg:mr-auto lg:ml-auto  px-5 ">
         <h1 className="lg:text-8xl/tight md:text-7xl/tight  text-6xl/tight font-bold ">

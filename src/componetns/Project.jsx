@@ -49,7 +49,7 @@ const Project = () => {
 
       <Link to="/">
         {" "}
-        <div className="fixed top-[15%] left-[3%] bg-[#201F23] rounded-full p-4 hidden md:flex items-center hover:text-[#66D9ED]   font-bold hover:border-[1px] hover:border-[#66D9ED]">
+        <div className="fixed top-[15%] left-[3%] bg-[#201F23] rounded-full p-4 hidden lg:flex items-center hover:text-[#66D9ED]   font-bold hover:border-[1px] hover:border-[#66D9ED]">
           <GoArrowLeft size={20} />
         </div>
       </Link>
@@ -59,11 +59,14 @@ const Project = () => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {nextProject && isHovered && (
-          <div className="w-[200px] ">
-            <img src={nextProject.src} />
-          </div>
-        )}
+        <div
+          className={` transition-all ease-in-out duration-300 ${
+            nextProject && isHovered ? "w-[200px]" : "w-0"
+          }`}
+        >
+          {nextProject && <img src={nextProject.src} />}
+        </div>
+
         <div className="text-black flex items-center p-4 w-[200px]">
           <div>
             <div className="flex items-center gap-2 font-semibold ">
@@ -95,7 +98,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="ml-auto mr-auto pt-10 px-6 md:ml-40 ">
+      <div className="ml-auto mr-auto pt-10 px-6 lg:ml-40 ">
         <div className="md:mt-0 mt-10">
           <p className=" opacity-80">Web Development</p>
           <p className="text-4xl mt-1 font-bold break-words">{project.text}</p>
@@ -121,7 +124,7 @@ const Project = () => {
           <p className="opacity-80">{project.text}</p>
         </div>
 
-        <div className="flex flex-wrap md:flex-nowrap w-[100%] lg:w-[750px] gap-10 md:gap-20 mt-10 items-center">
+        <div className="flex flex-wrap md:flex-nowrap w-[100%] md:w-[750px] gap-10 md:gap-20 mt-10 items-center">
           <div className="opacity-60">
             <p>{project.desc}</p>
           </div>

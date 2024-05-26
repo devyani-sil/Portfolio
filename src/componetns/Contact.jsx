@@ -14,7 +14,7 @@ const Contact = () => {
       <section
         id="contact"
         name="contact"
-        className="pt-8 flex items-center text-white "
+        className="pt-8 flex items-center text-white transition-all ease-in-out duration-700 animate-slide-fade-out"
       >
         <div className="lg:max-w-[80%] lg:mr-auto lg:ml-auto px-5">
           <h1 className="sm:mt-10 text-5xl font-bold">Get in touch⚡⚡</h1>

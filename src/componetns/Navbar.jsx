@@ -8,7 +8,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
 const Navbar = () => {
   const { projectId } = useParams();
-  console.log("nav"+projectId);
   const [navBg, setNavBg] = useState("black");
   const [scrolled, setScrolled] = useState(false);
 
@@ -18,9 +17,8 @@ const Navbar = () => {
         setNavBg("#1A191D");
       } else setNavBg("black");
     };
-
     handleColor();
-
+    
     const handScroll = () => {
       const isScrooled = window.scrollY > 600;
       setScrolled(isScrooled);
@@ -58,7 +56,7 @@ const Navbar = () => {
   return (
     <div className="realtive">
       <div
-        className={`w-[100%] flex  items-center  text-white px-6 py-4 md:static fixed z-50  bg-opacity-80`}
+        className={`w-[100%] flex  items-center  text-white px-6 py-4 md:static fixed z-50 `}
         style={{ backgroundColor: navBg }}
       >
         <h1 className="text-3xl md:text-5xl  font-bold font-signature ">
@@ -95,28 +93,31 @@ const Navbar = () => {
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
 
-        {nav && (
+        {
           <ul
-            className="md:hidden  flex flex-col justify-center 
-        items-center absolute  top-0 left-0 w-full h-screen bg-gradient-to-b from-black  to-gray-700
-        z-10"
+            className={`md:hidden transition-all ease-in-out duration-300 ${
+              nav ? "w-full" : "w-0"
+            }   flex flex-col justify-center 
+            items-center absolute  top-0 left-0  h-screen bg-gradient-to-b from-black  to-gray-700
+            z-10`}
           >
-            {links.map((link) => {
-              return (
-                <li key={link.id} className="cursor-pointer py-3 text-3xl">
-                  <HashLink
-                    to={`/#${link.link}`}
-                    onClick={() => setNav(!nav)}
-                    smooth
-                    duration={500}
-                  >
-                    // {link.tag}
-                  </HashLink>
-                </li>
-              );
-            })}
+            {nav &&
+              links.map((link) => {
+                return (
+                  <li key={link.id} className=" cursor-pointer py-3 text-3xl ">
+                    <HashLink
+                      to={`/#${link.link}`}
+                      onClick={() => setNav(!nav)}
+                      smooth
+                      duration={500}
+                    >
+                      // {link.tag}
+                    </HashLink>
+                  </li>
+                );
+              })}
           </ul>
-        )}
+        }
       </div>
 
       {scrolled && (

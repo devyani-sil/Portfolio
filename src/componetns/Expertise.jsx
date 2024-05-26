@@ -6,8 +6,8 @@ import {
   BiLogoJavascript,
   BiLogoTailwindCss,
 } from "react-icons/bi";
-
 import { expertisebg } from "../assets";
+import "./commancss.css";
 
 const Expertise = () => {
   return (
@@ -17,11 +17,11 @@ const Expertise = () => {
       className="md:h-screen bg-gradient-to-t  from-[#000000de] via-black to-[#000000f9] text-white"
     >
       <div className="mr-auto ml-auto  py-5 flex flex-col  justify-center items-center ">
-        <h1 className=" lg:text-7xl md:text-6xl xs:text-4xl text-5xl/10 mt-16 font-bold  tracking-wider">
+        <h1 className=" lg:text-7xl md:text-6xl xs:text-4xl text-5xl/10 mt-16 font-bold  tracking-wider transition-all ease-in-out duration-700 animate-slide-fade-out">
           My Expertise
         </h1>
 
-        <div className=" flex flex-col md:flex-row  items-center px-4 mt-10">
+        <div className=" flex flex-col md:flex-row  items-center px-4 mt-10 transition-all ease-in-out duration-700 animate-slide-fade-out">
           <div className="sm:w-[80%] sm:mr-auto sm:ml-auto md:max-w-[400px] border-2 border-gray-400 p-4">
             <div className="flex justify-around items-center">
               <div className="drop-shadow-[0_5px_14px_#61dbfb]">

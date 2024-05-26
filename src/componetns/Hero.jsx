@@ -2,20 +2,22 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-scroll";
 import DownScroll from "./motion/DownScroll";
+
+import "./commancss.css";
 const Hero = () => {
   return (
     <section
-      id = "hero"
+      id="hero"
       name="hero"
       className=" text-white h-screen bg-hero-pattern  bg-cover bg-center"
     >
       <Navbar />
       <div className="h-2/3 flex justify-center items-center md:pt-20">
         <div className=" flex flex-col justify-center items-center">
-          <h1 className="text-5xl md:text-9xl sm:text-7xl mt-40 md:mt-0 font-bold tracking-widest">
+          <h1 className="text-5xl md:text-9xl sm:text-7xl mt-40 md:mt-0 font-bold tracking-widest transition-all ease-in-out duration-700 animate-slide-fade-out">
             Mirth Pawar
           </h1>
-          <p className="text-lg md:text-2xl font-medium tracking-wider">
+          <p className="text-lg md:text-2xl font-medium tracking-wider transition-all ease-in-out duration-700 animate-slide-fade-out">
             Web Developer
           </p>
         </div>
