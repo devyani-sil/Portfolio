@@ -5,10 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Project from "./componetns/Project";
 import Home from "./Pages/Home";
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 const App = () => {
-  const {projectId} = useParams()
-
-  
   return (
     <BrowserRouter>
       <div className="">
@@ -18,7 +16,6 @@ const App = () => {
             <Route path=":projectId" element={<Project />} />
           </Route>
         </Routes>
-        
       </div>
     </BrowserRouter>
   );

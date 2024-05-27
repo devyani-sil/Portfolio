@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import { projects } from "../assets/data";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./project.css";
 import {
   MdKeyboardArrowRight,
@@ -99,10 +100,25 @@ const Project = () => {
         </div>
       </div>
       <div className="ml-auto mr-auto pt-10 px-6 lg:ml-40 ">
-        <div className="md:mt-0 mt-10">
+        <motion.div
+          className="md:mt-0 mt-10"
+          initial={{
+            y: 40,
+            opacity: 0,
+          }}
+          animate={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: true }}
+        >
           <p className=" opacity-80">Web Development</p>
           <p className="text-4xl mt-1 font-bold break-words">{project.text}</p>
-        </div>
+        </motion.div>
 
         <div className="flex gap-1 items-center mt-20 font-semibold">
           <Link to="/">

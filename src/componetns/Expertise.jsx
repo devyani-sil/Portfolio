@@ -1,6 +1,7 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 import {
   BiLogoCss3,
   BiLogoJavascript,
@@ -17,11 +18,41 @@ const Expertise = () => {
       className="md:h-screen bg-gradient-to-t  from-[#000000de] via-black to-[#000000f9] text-white"
     >
       <div className="mr-auto ml-auto  py-5 flex flex-col  justify-center items-center ">
-        <h1 className=" lg:text-7xl md:text-6xl xs:text-4xl text-5xl/10 mt-16 font-bold  tracking-wider transition-all ease-in-out duration-700 animate-slide-fade-out">
+        <motion.h1
+          className=" lg:text-7xl md:text-6xl xs:text-4xl text-5xl/10 mt-16 font-bold  tracking-wider "
+          initial={{
+            y: 50,
+            opacity: 0,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          viewport={{once:true}}
+        >
           My Expertise
-        </h1>
+        </motion.h1>
 
-        <div className=" flex flex-col md:flex-row  items-center px-4 mt-10 transition-all ease-in-out duration-700 animate-slide-fade-out">
+        <motion.div
+          className=" flex flex-col md:flex-row  items-center px-4 mt-10 "
+          initial={{
+            y: 50,
+            opacity: 0,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          viewport={{once:true}}
+        >
           <div className="sm:w-[80%] sm:mr-auto sm:ml-auto md:max-w-[400px] border-2 border-gray-400 p-4">
             <div className="flex justify-around items-center">
               <div className="drop-shadow-[0_5px_14px_#61dbfb]">
@@ -63,7 +94,7 @@ const Expertise = () => {
               <AiFillGithub size={90} />
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="max-w-[528px] opacity-[.2] drop-shadow-[0_5px_14px_#fbea5f] ">
           <img src={expertisebg} alt="bg" className="" />
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 import "./Work.css";
 import { projects } from "../assets/data";
 const Work = () => {
@@ -21,22 +21,50 @@ const Work = () => {
 
   return (
     <section
-     id="work"
+      id="work"
       name="work"
       className="py-10 md:mt-0 text-white bg-gradient-to-t from-[#000000f9] via-black to-[#000000de]"
     >
       <div className="lg:max-w-[80%] lg:mr-auto lg:ml-auto  px-5 ">
-        <h1 className="lg:text-8xl/tight md:text-7xl/tight  text-6xl/tight font-bold ">
+        <motion.h1
+          className="lg:text-8xl/tight md:text-7xl/tight  text-6xl/tight font-bold "
+          initial={{
+            y: 50,
+            opacity: 0,
+          }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: true }}
+        >
           My <br /> Work
-        </h1>
+        </motion.h1>
         <div className="grid sm:grid-cols-2  gap-8 px-12 sm:px-0 mt-6">
           {projects.map((item, index) => {
             return (
-              <div
+              <motion.div
                 key={item.id}
                 className="shadow-md shadow-gray-800 bg-[#88888825] rounded-md"
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
+                initial={{
+                  y: 50,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                }}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
               >
                 <div className="overflow-hidden">
                   <Link
@@ -62,7 +90,7 @@ const Work = () => {
                     {hover[index] ? <a>Show Project </a> : item.type}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
