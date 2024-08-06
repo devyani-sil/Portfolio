@@ -1,13 +1,12 @@
 import React from "react";
-import { FaReact } from "react-icons/fa";
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import {
   BiLogoCss3,
   BiLogoJavascript,
   BiLogoTailwindCss,
 } from "react-icons/bi";
-import { expertisebg } from "../assets";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { AiFillHtml5, AiFillGithub } from "react-icons/ai";import { expertisebg } from "../assets";
 import "./commancss.css";
 
 const Expertise = () => {
@@ -32,13 +31,13 @@ const Expertise = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
           My Expertise
         </motion.h1>
 
         <motion.div
-          className=" flex flex-col md:flex-row  items-center px-4 mt-10 "
+          className=" flex flex-col md:flex-row items-center px-4 mt-10 "
           initial={{
             y: 50,
             opacity: 0,
@@ -51,51 +50,47 @@ const Expertise = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          viewport={{once:true}}
+          viewport={{ once: true }}
         >
-          <div className="sm:w-[80%] sm:mr-auto sm:ml-auto md:max-w-[400px] border-2 border-gray-400 p-4">
-            <div className="flex justify-around items-center">
-              <div className="drop-shadow-[0_5px_14px_#61dbfb]">
-                <FaReact size={60} />
+          <div className="sm:mr-auto sm:ml-auto max-w-[450px] border-2 border-gray-400 p-4">
+            <div className="flex flex-row md:px-5 items-center">
+              <div className="drop-shadow-[0_5px_14px_#00d8ff]">
+                <FaReact size={50} />
               </div>
-              <h3 className="font-bold  text-2xl tracking-wide  ">
-                <span className=""> Frontend Developer </span> <br /> React
+              <h3 className="font-bold px-5  md:text-2xl tracking-wide  ">
+                <span className=""> Frontend Dev </span> <br /> React, Tailwind
               </h3>
             </div>
 
-            <div className="mt-1 leading-7  font-medium  tracking-wide ">
-              <div className="px-2 mt-4 ml-10 border-l-4 border-[#b7f]">
+            <div className="mt-1 leading-7  font-normal  tracking-wide ">
+              <div className="px-2 mt-4 md:ml-12 ml-4 border-l-4 border-[#b7f]">
                 <p className="p-2 ml-2 ">
-                  Skilled in crafting dynamic web applications and interactive
-                  user interfaces with React. Experienced in responsive design
+                  Skilled in crafting interactive user interfaces with React. Experienced in responsive design
                   and modern web development practices.
                 </p>
               </div>
             </div>
           </div>
+          <div className="sm:mr-auto sm:ml-auto max-w-[450px] border-2 border-gray-400 p-4">
+            <div className="flex flex-row md:px-5 items-center">
+              <div className="drop-shadow-[0_5px_14px_#68A063]">
+                <FaNodeJs size={50} />
+              </div>
+              <h3 className="font-bold px-5  md:text-2xl tracking-wide  ">
+                <span className=""> Backend Dev </span> <br /> Node, MongoDB
+              </h3>
+            </div>
 
-          <div className="sm:w-[80%] sm:mr-auto sm:ml-auto md:max-w-[400px]  flex flex-wrap items-center  justify-center border-2 border-gray-400 py-11 ">
-            <div className="drop-shadow-[0_5px_14px_#e95d00]">
-              <AiFillHtml5 size={90} />
-            </div>
-            <div className="drop-shadow-[0_5px_14px_#2C49D8]">
-              <BiLogoCss3 size={90} />
-            </div>
-            <div className="drop-shadow-[0_5px_14px_#38bdf8]">
-              <BiLogoTailwindCss size={90} />
-            </div>
-            <div className="drop-shadow-[0_5px_14px_#fbea5f]">
-              <BiLogoJavascript size={90} />
-            </div>
-            <div className="drop-shadow-[0_5px_14px_#61dbfb]">
-              <FaReact size={90} />
-            </div>
-            <div className="drop-shadow-[0_5px_14px]">
-              <AiFillGithub size={90} />
+            <div className="mt-1 leading-7  font-normal  tracking-wide ">
+              <div className="px-2 mt-4 md:ml-12 ml-4 border-l-4 border-[#b7f]">
+                <p className="p-2 ml-2 ">
+                Experienced in backend development with Node.js, Express.js, and MongoDB, focusing on scalable architectures and clean, production-grade code.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
-        <div className="max-w-[528px] opacity-[.2] drop-shadow-[0_5px_14px_#fbea5f] ">
+        <div className="max-w-[528px] opacity-[.2] drop-shadow-[0_5px_14px_#fbea5f]">
           <img src={expertisebg} alt="bg" className="" />
         </div>
       </div>
