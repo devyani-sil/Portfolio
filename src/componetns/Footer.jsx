@@ -6,7 +6,7 @@ const Footer = () => {
     <footer
       className={`text-white  font-semibold flex justify-center items-center sm:p-5 bg-transparent`}
     >
-      <div className="">&copy; || Developed with ❤️ by Mirth Pawar</div>
+      <div className="">&copy; || Developed with ❤️ by Devyani Sil</div>
     </footer>
   );
 };

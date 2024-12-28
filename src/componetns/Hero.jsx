@@ -31,7 +31,7 @@ const Hero = () => {
           viewport={{once:true}}
         >
           <h1 className="text-5xl md:text-9xl sm:text-7xl mt-40 md:mt-0 font-bold tracking-widest">
-            Mirth Pawar
+            Devyani Sil
           </h1>
           <p className="text-lg md:text-2xl font-medium tracking-wider">
             Web Developer

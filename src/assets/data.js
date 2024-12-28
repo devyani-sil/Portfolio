@@ -1,13 +1,17 @@
 import {
     makeoverbykeerti,
-    memeexpress,
-    myportfolio,
-    myportfolio1,
-    myportfolio2,
-    myportfolio3,
+    hotel,
+    hotel1,
+    hotel2,
+    hotel3,
+    hotel4,
+    portfolio,
+    portfolio1,
+    portfolio2,
+    
     quizzical,
     realpalace,
-    retailrealmdashboard,
+    vidtube,
     retailrealmshop,
 
     retailrealmshop2,
@@ -17,9 +21,14 @@ import {
     retailrealmshop6,
 
 
-    retailrealmdashboard2,
-    retailrealmdashboard3,
-    retailrealmdashboard4
+    vidtube1,
+    vidtube2,
+    
+    swarmony,
+    swarmony1,
+    swarmony2,
+    swarmony3,
+    swarmony4
 } from "./index";
 
 const projects = [
@@ -40,31 +49,28 @@ const projects = [
     },
     {
         id: 2,
-        text: "Retail Realm Dashboard",
+        text: "TubeTweet - A Video Streaming Platform",
         type: "Web Development",
-        src: retailrealmdashboard,
+        src: vidtube,
         desc: "Effortlessly manage your inventory with Retail Realm's Admin Dashboard. Easily add, remove, and update products while gaining valuable insights through intuitive analytics and sales overviews. With Reacti18n integration, language translation is seamless for all users.",
-        tech: "React, Material UI, Reacti18n, Tailwind CSS",
-        link: "https://github.com/Mirthhh08/Admin-Dashboard",
+        tech: "React, Node, Express, MongoDB, Tailwind CSS",
+        link: "https://github.com/devyani-sil/TubeTweet",
 
-        img2: retailrealmdashboard2,
-        img3: retailrealmdashboard3,
-        img4: retailrealmdashboard4,
-
-
+        img2: vidtube1,
+        img3: vidtube2,
 
     },
     {
         id: 3,
-        src: myportfolio,
+        src: portfolio,
         text: "Portfolio Site",
         type: "React Development",
         desc: "Explore my recent projects, delve into my areas of expertise, and uncover my rich experience in the field. With seamless navigation and captivating design, my portfolio sets a new standard for showcasing excellence in the digital realm.",
         tech: "React , Tailwind CSS",
         link: "https://my-portfolio-sigma-liart.vercel.app/",
-        img2: myportfolio1,
-        img3: myportfolio2,
-        img4: myportfolio3,
+        img2: portfolio1,
+        img3: portfolio2,
+        
 
     },
     {
@@ -81,13 +87,30 @@ const projects = [
     },
     {
         id: 5,
-        src: memeexpress,
-        text: "MemeXpress",
-        type: "React Development",
-        desc: "MemeXpress is a fun and entertaining tool that generates random meme images for you to enjoy. MemeXpress WebApp that access images from the Image Flip Database API, not only can you view random memes, but you can also add your own touch of humor by overlaying custom text on the images and download them.",
-        tech: "React ",
-        link: "https://github.com/Mirthhh08/MemeXpress",
+        src: hotel,
+        text: "Celestial Crown",
+        type: "Web Development",
+        desc: "Experience a celestial touch to hotel management with Celestial Crown.The system allows customers to explore all the perks our hotel has to offer. From heavenly rooms to stellar amenities, booking your dream room with our user-friendly interface, ensuring a hassle-free reservation process.For our admins, you can effortlessly manage check-ins, checkouts,room availaibilities. Edit, delete, or update room categories with ease using our sparkling admin dashboard.",
+        tech: "HTML, CSS, Bootstrap, JavaScript, jQuery, PHP, MySql",
+        link: "https://github.com/devyani-sil/CelesCrownHotel",
+        img2: hotel1,
+        img3: hotel2,
+        img4: hotel3,
+        img5: hotel4,
 
+    },
+    {
+        id: 6,
+        src: swarmony,
+        text: "Swarmony - A Virtual Collaboration Platform",
+        type: "PHP Development",
+        desc: "Swarmony is a virtual collaboration platform designed to bring together musicians, singers,guitarist, songwriters, and many more from around the world.It enables musicians to create personalized profiles, showcase their talents, and connect with others based on location.",
+        tech: "HTML, CSS, JavaScript, PHP, MySQL",
+        link: "https://github.com/devyani-sil/Swarmony--php",
+        img2: swarmony1,
+        // img3: swarmony2,
+        img4: swarmony3,
+        img5: swarmony4,
     },
 ]
 

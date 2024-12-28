@@ -60,7 +60,7 @@ const Navbar = () => {
         style={{ backgroundColor: navBg }}
       >
         <h1 className="text-3xl md:text-5xl  font-bold font-signature ">
-          Mirth._
+          Devyani._
         </h1>
 
         <nav className="hidden md:flex  items-center mr-auto ml-auto ">

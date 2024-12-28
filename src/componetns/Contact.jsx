@@ -38,7 +38,7 @@ const Contact = () => {
           </motion.h1>
           <div className="py-4 flex-col-reverse  flex md:flex-row gap-10 ">
             <motion.form
-              action="https://getform.io/f/b54f4bbc-e270-4281-afed-0b8bf3e1f2d8"
+              action="https://getform.io/f/axoonknb"
               method="POST"
               className="flex flex-col w-full sm:w-2/3 ml-auto mr-auto"
               initial={{
@@ -124,31 +124,31 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="hover:cursor-pointer  hover:drop-shadow-[0_2px_4px_#61dbfb]">
-                  <a href="mailto:mirthpawar0408@gmail.com">
+                  <a href="mailto:sildevyani03@gmail.com">
                     <AiOutlineMail size={50} />
                   </a>
                 </div>
                 <div className="hover:cursor-pointer hover:drop-shadow-[0_2px_4px_#61dbfb]">
-                  <a href="https://github.com/Mirthhh08" target="_blank">
+                  <a href="https://github.com/devyani-sil" target="_blank">
                     <AiFillGithub size={50} />
                   </a>
                 </div>
                 <div className="hover:cursor-pointer hover:drop-shadow-[0_2px_4px_#61dbfb]">
                   <a
-                    href="https://www.linkedin.com/in/mirth-pawar-m08/"
+                    href="https://www.linkedin.com/in/devyani04/"
                     target="_blank"
                   >
                     <AiFillLinkedin size={50} />
                   </a>
                 </div>
                 <div className="hover:cursor-pointer hover:drop-shadow-[0_2px_4px_#61dbfb]">
-                  <a href="https://twitter.com/mirthhhh_" target="_blank">
+                  <a href="https://x.com/SilDevyani" target="_blank">
                     <AiFillTwitterCircle size={50} />
                   </a>
                 </div>
                 <div className="hover:cursor-pointer hover:drop-shadow-[0_2px_4px_#61dbfb]">
                   <a
-                    href="https://www.instagram.com/mirthhhh_/"
+                    href="https://www.instagram.com/de.vyani_/profilecard/?igsh=MWx1b2s5dm41bXZiNQ=="
                     target="_blank"
                   >
                     <AiOutlineInstagram size={50} />
