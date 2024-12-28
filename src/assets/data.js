@@ -52,7 +52,7 @@ const projects = [
         text: "TubeTweet - A Video Streaming Platform",
         type: "Web Development",
         src: vidtube,
-        desc: "Effortlessly manage your inventory with Retail Realm's Admin Dashboard. Easily add, remove, and update products while gaining valuable insights through intuitive analytics and sales overviews. With Reacti18n integration, language translation is seamless for all users.",
+        desc: "TubeTweet is a web application that combines the features of YouTube and Twitter, allowing users to upload videos and share short messages seamlessly. It includes functionalities like video uploading, storage, and robust authentication with JWT",
         tech: "React, Node, Express, MongoDB, Tailwind CSS",
         link: "https://github.com/devyani-sil/TubeTweet",
 
@@ -67,7 +67,7 @@ const projects = [
         type: "React Development",
         desc: "Explore my recent projects, delve into my areas of expertise, and uncover my rich experience in the field. With seamless navigation and captivating design, my portfolio sets a new standard for showcasing excellence in the digital realm.",
         tech: "React , Tailwind CSS",
-        link: "https://my-portfolio-sigma-liart.vercel.app/",
+        link: "https://devyani-portfolio.vercel.app/",
         img2: portfolio1,
         img3: portfolio2,
         
