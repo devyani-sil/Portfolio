@@ -39,7 +39,7 @@ const projects = [
         src: retailrealmshop,
         desc: "Experience the future of online shopping with Retail Realm. Our platform seamlessly blends intuitive design with cutting-edge technology, offering dynamic product management, secure authentication, smooth cart operations, and seamless payments. Explore a visually captivating and responsive platform, setting a new standard for ecommerce excellence.",
         tech: "React, Node, Express, MongoDB, Tailwind CSS",
-        link: "https://github.com/Mirthhh08/RetailRealm",
+        link: "https://github.com/devyani-sil/Retail-realm",
         img2: retailrealmshop4,
         img3: retailrealmshop5,
         img4: retailrealmshop6,
@@ -73,20 +73,9 @@ const projects = [
         
 
     },
+    
     {
         id: 4,
-        src: quizzical,
-        text: "QuizWhizz - A quiz app",
-        type: "React Development",
-        desc: "Enjoy the perfect blend of education and fun with QuizWhiz, the ultimate quiz app for curious minds. It is a web application that uses the Open Trivia Database API to access trivia questions and grades players according to their responses. The player can alter the game's complexity and category among other things.",
-        tech: "React",
-        link: "https://github.com/Mirthhh08/QuizWhizz",
-
-
-
-    },
-    {
-        id: 5,
         src: hotel,
         text: "Celestial Crown",
         type: "Web Development",
@@ -100,7 +89,7 @@ const projects = [
 
     },
     {
-        id: 6,
+        id: 5,
         src: swarmony,
         text: "Swarmony - A Virtual Collaboration Platform",
         type: "PHP Development",
